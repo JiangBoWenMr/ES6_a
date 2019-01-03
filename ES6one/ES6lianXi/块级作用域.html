@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	{
+		var a =10;
+		let b =20;
+		const c =30;
+		alert(b);
+		alert(c);
+		alert(a);
+		function test(){
+			console.log("1123");
+		}
+		test();
+	}
+	// 一对{}为一个作用域
+	
+	{
+		var a =100;
+		let b = 90;
+		const c =80;
+		alert(a);
+		alert(b);
+		alert(c);
+		function test(){
+			console.log("466")
+		}
+		test()
+	}
+	
+	alert(a)
+	//20 30 10 100 90 80 100
+</script>
