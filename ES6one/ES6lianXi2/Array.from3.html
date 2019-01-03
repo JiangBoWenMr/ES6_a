@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>10</p>
+    <p>100</p>
+    <p>1002</p>
+    <p>1003</p>
+    <p>1004</p>
+    <p>1005</p>
+    <p>1006</p>
+    <p>1007</p>
+    <p>1008</p>
+    <p>1009</p>
+    <p>10010</p>
+</body>
+</html>
+<script>
+    // let mp =document.querySelectorAll("p");
+    // let arr =Array.from(mp);
+    // let result =arr.filter(function(item){
+    //     if(item.textContent.length >3 && item.textContent.length <5){
+    //         return true;
+    //     }
+    // });
+    // result.forEach(function(item,index){
+    //     item.onclick = function (){
+    //         alert(this.innerHTML)
+    //     }
+    // })
+
+    // let mp =document.querySelectorAll("p");
+    // let arr =Array.from(mp);
+    // let result =arr.filter(function(item){
+    //     if(item.textContent.length >4 && item.textContent.length <6){
+    //         return true;
+    //     }
+    // });
+    // result.forEach(function(item,index){
+    //     item.onclick = function(){
+    //         console.log(this.innerHTML) //10010
+    //     }
+    // })
+    
+    let op = document.querySelectorAll("p");
+    let arr =Array.from(op);
+    let result =arr.filter(function(item){
+        if(item.textContent.length >2 && item.textContent.length <4){
+            return true;
+        }
+    });
+
+    result.forEach(function(item,index){
+        item.onclick = function(){
+            console.log(this.innerHTML) //100
+        }
+    })
+
+
+</script>
